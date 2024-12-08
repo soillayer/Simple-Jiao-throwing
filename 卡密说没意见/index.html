@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机筊签生成器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="draggable-container" id="draggableContainer">
+        <div class="header" id="dragHeader">随机筊签生成器</div>
+        <div class="container">
+            <div class="boxes">
+                <div class="box" id="box1">
+                    <img src="images/placeholder.png" alt="结果1" id="image1" class="fade">
+                </div>
+                <div class="box" id="box2">
+                    <img src="images/placeholder.png" alt="结果2" id="image2" class="fade">
+                </div>
+            </div>
+            <button class="generate-button" onclick="generateResults()">生成筊签</button>
+            <div class="result" id="resultText"></div>
+            <div class="description">
+                <p class="summary">正十字是阳，倒十字是阴。</p>
+                <button class="toggle-button" onclick="toggleDescription()">查看更多</button>
+                <div class="details" id="descriptionDetails">
+                    <p><strong>圣筊</strong>: 表示神明允许、同意，或行事会顺利。又称允筊。</p>
+                    <p><strong>笑筊</strong>: 表示神明一笑、不解，或者考虑中，行事状况不明，可以重新再掷筊请示神明，或再次说清楚自己的祈求。</p>
+                    <p><strong>哭筊</strong>: 表示神明否定、愤怒，或者不宜行事，可以重新再掷筊请示。又称哭筊、阴筊、无筊、怒筊。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
